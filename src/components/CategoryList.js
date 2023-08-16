@@ -5,7 +5,7 @@ export default class CategoryList extends Component {
     render() {
         return (
             <React.Fragment>
-                <h3> { this.props.title } </h3>
+                <h3> { this.props.info.title } </h3>
                 <ListGroup numbered flush horizontal>
                     <ListGroupItem>Cras justo odio</ListGroupItem>
                     <ListGroupItem active>Dapibus ac facilisis in</ListGroupItem>

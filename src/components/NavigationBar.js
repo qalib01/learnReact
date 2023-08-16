@@ -7,7 +7,7 @@ export default class NavigationBar extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1> {this.props.title} </h1>
+                <h1> { this.props.info.title } </h1>
             </React.Fragment>
         )
     }

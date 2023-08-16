@@ -9,23 +9,34 @@ class App extends React.Component {
     // let productTitle = 'Product'; When we write this in here, it will return an error that Parsing erorr: Unexpected Token
 
     render () {
-        let titles = {
-            productTitle: 'Product List',
-            categoryTitle: 'Category List',
-            navigationTitle: 'Navigation List',
-        }; // We can write the titles as separate variables and inside an array, it will good and easy to read
+        // let titles = { // After including Encapsulitation we dont need it. It wasn't easy to edit.
+        //     productTitle: 'Product List',
+        //     categoryTitle: 'Category List',
+        //     navigationTitle: 'Navigation List',
+        // }; // We can write the titles as separate variables and inside an array, it will good and easy to read
+
+        let productInfo = {
+            title: 'Product List'
+        }; // Encapsulitation
+        let categoryInfo = {
+            title: 'Category List'
+        }; // Encapsulitation
+        let navigationInfo = {
+            title: 'Navigation List'
+        }; // Encapsulitation
+
         return (
             <React.Fragment>
                 <Container>
                     <Row>
-                        <NavigationBar title={titles.navigationTitle} />
+                        <NavigationBar info={ navigationInfo } />
                     </Row>
                     <Row>
                         <Col xs="3">
-                            <CategoryList title={titles.categoryTitle} />
+                            <CategoryList info={ categoryInfo } />
                         </Col>
                         <Col xs="9">
-                            <ProductList title={titles.productTitle} />
+                            <ProductList info={ productInfo } />
                         </Col>
                     </Row>
                 </Container>
