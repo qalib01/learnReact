@@ -17,13 +17,13 @@ class App extends React.Component {
 
         let productInfo = {
             title: 'Product List'
-        }; // Encapsulitation
+        }; // Encapsulation
         let categoryInfo = {
             title: 'Category List'
-        }; // Encapsulitation
+        }; // Encapsulation
         let navigationInfo = {
             title: 'Navigation List'
-        }; // Encapsulitation
+        }; // Encapsulation
 
         return (
             <React.Fragment>
