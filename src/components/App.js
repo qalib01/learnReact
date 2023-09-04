@@ -29,17 +29,24 @@ class App extends React.Component {
             <React.Fragment>
                 <Container>
                     <Row>
-                        <NavigationBar info={ navigationInfo } />
+                        <NavigationBar info = { navigationInfo } />
                     </Row>
                     <Row>
                         <Col xs="3">
-                            <CategoryList info={ categoryInfo } />
+                            <CategoryList info = { categoryInfo } />
                         </Col>
                         <Col xs="9">
-                            <ProductList info={ productInfo } />
+                            <ProductList info = { productInfo } />
                         </Col>
                     </Row>
                 </Container>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </React.Fragment>
         ) 
     }
